@@ -1,0 +1,72 @@
+/* Empty. Add your own CSS if you like */
+
+/* news detail */
+.newsDetail h4 {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+.newsDetail pre {
+	font-size: 16px;
+	line-height:24px;
+}
+
+.account {
+	background-color: #f5f5f5;
+}
+
+.account .item-divider {
+	min-height: 8px;
+}
+
+.account .item-avatar {
+	min-height: 90px;
+}
+
+.account .item-avatar > img:first-child {
+	max-width: 60px;
+	max-height: 60px;
+}
+
+.account .item-avatar h2, .account .item-avatar p {
+	margin-left: 20px;
+}
+
+/* intro */
+.slider {
+  height: 100%;
+}
+
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+#list ol {
+  margin-top: 30px;
+}
+
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button .ng-hide{
+  display: none;
+}

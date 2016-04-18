@@ -1,0 +1,56 @@
+<!-- This is the introduction view -->
+
+<ion-view view-title="<img class='title-image' src='img/logo.png' style='width: 94px;' />">
+  <ion-nav-buttons side="left" class="introNav">
+    <button class="button button-clear no-animation"
+            ng-click="startApp()" ng-show="!slideIndex">
+      Skip
+    </button>
+    <button class="button button-clear no-animation"
+            ng-click="previous()" ng-show="slideIndex > 0">
+      Previous
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right" class="introNav"> 
+    <button class="button button-clear no-animation"
+            ng-click="next()" ng-show="slideIndex != 2">
+      Next
+    </button>
+    <button class="button button-clear no-animation"
+            ng-click="startApp()" ng-show="slideIndex == 2">
+      Start
+    </button>
+  </ion-nav-buttons>
+  <ion-slide-box on-slide-changed="slideChanged(index)">
+    <ion-slide>
+      <h3>Thank you for choosing Pro Wrestling Illustrated!</h3>
+      <div id="logo">
+        <img src="img/intro.jpg">
+      </div>
+      <p>
+        你看到了一个很精彩的欢迎页面！
+      </p>
+      <p>
+        你看到了一个很精彩的欢迎页面！
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <h3>Using PWI</h3>
+      
+      <div id="list">
+        <h5>Just three steps:</h5>
+        <ol>
+          <li>Be awesome</li>
+          <li>Stay awesome</li>
+          <li>There is no step 3</li>
+        </ol>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <h3>Any questions?</h3>
+      <p>
+        Too bad!
+      </p>
+    </ion-slide>
+  </ion-slide-box>
+</ion-view>

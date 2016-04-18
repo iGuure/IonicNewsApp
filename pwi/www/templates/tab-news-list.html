@@ -1,0 +1,14 @@
+<!-- This is the news list view -->
+
+<ion-view view-title="<img class='title-image' src='img/logo.png' style='width: 94px;' />">
+	<ion-content>
+		<ion-refresher on-refresh="doRefresh()"></ion-refresher>
+		<ion-list>
+			<ion-item class="item-thumbnail-left item-text-wrap" ng-repeat="news in nlc.data" href="#/tab/news/{{promotion}}/{{news.id}}">
+				<img ng-src="{{news.image}}" style="object-fit: cover;" />
+				<h2>{{news.title}}</h2>
+				<p>{{news.summary}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

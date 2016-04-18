@@ -1,0 +1,12 @@
+<!-- This is the news detail view -->
+
+<ion-view view-title="<img class='title-image' src='img/logo.png' style='width: 94px;' />">
+  <ion-content class="padding newsDetail">
+    <h4>{{ndc.data.title}}</h4>
+    <p>{{ndc.data.date}}</p>
+    <hr />
+    <img ng-src="{{ndc.data.image}}" style="width: 100%;" />
+    <p align="right">{{ndc.data.editor}}</p>
+    <pre>{{ndc.data.content}}</pre>
+  </ion-content>
+</ion-view>

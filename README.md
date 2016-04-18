@@ -11,11 +11,13 @@ Build iOS/Android
 -----------------
 Use the following command:
 
-+ For building iOS:
+For building iOS:
+
     $ ionic platform add ios
     $ ionic build ios
 
-+ For building Android:
+For building Android:
+
     $ ionic platform add android
     $ ionic build android
 
